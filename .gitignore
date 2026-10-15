@@ -1,0 +1,16 @@
+# Rust build output
+target/
+
+# Stellar CLI local config (may hold identities)
+.stellar/
+
+# Secrets and local settings
+.env
+.env.*
+.claude/settings.local.json
+
+# Frontend
+node_modules/
+dist/
+
+.DS_Store

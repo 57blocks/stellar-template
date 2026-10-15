@@ -1,0 +1,10 @@
+{
+  "extraKnownMarketplaces": {
+    "57blocks-stellar": {
+      "source": { "source": "github", "repo": "57blocks/stellar-claude-plugins" }
+    }
+  },
+  "enabledPlugins": {
+    "stellar@57blocks-stellar": true
+  }
+}

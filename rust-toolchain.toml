@@ -1,0 +1,5 @@
+# soroban-sdk 29 needs Rust 1.91+. With rustup, entering this directory picks a recent
+# stable toolchain and installs the wasm target automatically.
+[toolchain]
+channel = "stable"
+targets = ["wasm32v1-none"]

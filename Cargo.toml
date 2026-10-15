@@ -1,0 +1,24 @@
+[workspace]
+resolver = "2"
+members = ["contracts/*"]
+
+[workspace.dependencies]
+# The SDK major version tracks the protocol version. Testnet and mainnet both run protocol 29
+# as of October 2026; check your target network's protocol (`getLatestLedger` on its RPC) and
+# crates.io before upgrading.
+soroban-sdk = "29"
+
+[profile.release]
+opt-level = "z"
+overflow-checks = true
+debug = 0
+strip = "symbols"
+debug-assertions = false
+panic = "abort"
+codegen-units = 1
+lto = true
+
+# For debugging: `stellar contract build --profile release-with-logs`
+[profile.release-with-logs]
+inherits = "release"
+debug-assertions = true
