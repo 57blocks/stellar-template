@@ -1,10 +1,10 @@
 {
   "extraKnownMarketplaces": {
-    "57blocks-stellar": {
-      "source": { "source": "github", "repo": "57blocks/stellar-claude-plugins" }
+    "stellar-dev": {
+      "source": { "source": "github", "repo": "stellar/stellar-dev-skill" }
     }
   },
   "enabledPlugins": {
-    "stellar@57blocks-stellar": true
+    "stellar-dev@stellar-dev": true
   }
 }
